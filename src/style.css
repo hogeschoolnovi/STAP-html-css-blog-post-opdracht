@@ -1,0 +1,370 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@800&display=swap');
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make images easy to work with */
+img,
+picture {
+    max-width: 100%; /* image will shrink when viewport gets narrower */
+    display: block; /* prevents spacing issues that might happen */
+}
+
+/* Make forms easy to work with */
+input,
+button,
+textarea,
+blockquote,
+select {
+    font: inherit;
+}
+
+/* Global styles */
+h1,
+h2 {
+    font-family: "Playfair Display", sans-serif;
+}
+
+p,
+span,
+li {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+}
+
+h2,
+ul,
+ol {
+    margin-block: 20px;
+}
+
+li {
+    margin-left: 40px;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.25em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-weight: 400;
+    line-height: 2;
+    font-size: 1em;
+}
+
+span {
+    font-size: 0.875em;
+    text-transform: uppercase;
+}
+
+/* Set up the body */
+body {
+    position: relative;
+    background-color: #F7F6F9;
+    overflow-x: hidden;
+}
+
+body::before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    border-top: solid 2px black;
+    width: 50px;
+    top: 300px;
+    left: 25px;
+    transform: rotate(-90deg);
+}
+
+body::after {
+    position: absolute;
+    display: inline-block;
+    content: 'Blogpost';
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.5em;
+    top: 200px;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+/* Flexbox Properties */
+header,
+main,
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    max-width: 80em;
+}
+
+/* Header */
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 40px;
+}
+
+header div:nth-of-type(1) img {
+    margin-top: 60px;
+    height: 160px;
+    width: 160px;
+}
+
+header div:nth-of-type(2) img {
+    height: 80px;
+    width: 80px;
+    margin-block: 15px;
+}
+
+header div:nth-of-type(2) span {
+    color: #058FDD;
+}
+
+header img:nth-of-type(3) {
+    height: 80px;
+    width: 80px;
+}
+
+header::after {
+    position: absolute;
+    font-family: "Playfair Display", sans-serif;
+    color: rgba(45, 42, 46, 0.03);
+    font-size: 31.25em;
+    content: 'Blogpost';
+    z-index: -1;
+    top: -100px;
+}
+
+/* Main */
+main {
+    position: relative;
+}
+
+/* Aside */
+aside {
+    position: absolute;
+    left: 80px;
+    margin-top: 30px;
+}
+
+aside::before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    border-top: solid 2px #058FDD;
+    width: 50px;
+    top: 0;
+    left: 10px;
+}
+
+aside time {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 0.75em;
+}
+
+aside span {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 3em;
+}
+
+aside div {
+    margin-top: 40px;
+}
+
+aside img {
+    margin-block: 10px;
+    height: auto;
+    width: 64px;
+}
+
+/* Article */
+
+article {
+    margin-inline: auto;
+    max-width: 55em;
+    /*max-width: 880px;*/
+}
+
+article p {
+    margin-block: 20px;
+}
+
+article p a {
+    color: #058FDD;
+}
+
+article blockquote {
+    position: relative;
+    font-size: 1.1em;
+    margin: 30px 20px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+article blockquote::before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    border-top: solid 3px #058FDD;
+    width: 60px;
+    top: 25px;
+    left: -50px;
+    transform: rotate(-90deg);
+}
+
+/* Article Socials */
+
+article div {
+    margin-block: 20px;
+}
+
+span + span {
+    color: #058FDD;
+}
+
+article div img {
+    display: inline;
+    margin-inline: 10px;
+}
+
+article div a {
+    text-decoration: none;
+}
+
+/* Related Articles */
+main > section > section > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+main > section > section > div div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+main > section > section div > article {
+    max-width: 369px;
+}
+
+main section article time {
+    font-family: "Inter", sans-serif;
+}
+
+/* Form */
+
+form * {
+    margin: 0;
+    padding: 0;
+}
+
+form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div div:nth-of-type(2) * {
+    width: 800px;
+}
+
+/* Footer */
+footer {
+    margin-block: 2em;
+}
+
+label {
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    margin-block: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    background: #EFEFEF;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    border: none;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: inline;
+    cursor: pointer;
+}
+
+select {
+    cursor: pointer;
+}
+
+button {
+    font-family: "Inter", sans-serif;
+    color: black;
+    cursor: pointer;
+    padding: 5px 20px;
+}
+
+form > h2 {
+    position: relative;
+}
+
+form > h2::after {
+    position: absolute;
+    content: "";
+    top: 55%;
+    left: 30%;
+    border: 1px solid black;
+    width: 70%;
+}
+
+section > h2 {
+    position: relative;
+}
+
+form + section > h2::after {
+    position: absolute;
+    content: "";
+    top: 55%;
+    left: 30%;
+    border: 1px solid black;
+    width: 70%;
+}
+
+
+
