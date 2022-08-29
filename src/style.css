@@ -1,67 +1,33 @@
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
-        1.1 Import fonts
-        1.2 CSS variabelen
-        1.3 CSS reset
-        1.4 Image settings
-        1.5 Form settings
     2. Typografie
-        2.1 Typografie headings
-        2.2 Typografie overig
     3. Layout
-        3.1 Body
-        3.2 Flexbox properties
     4. Areas
-        4.1 Blogpost schuin text
-        4.2 Blogpost schuin lijntje
-        4.3 Blogpost achtergrond
-        4.4 Titel en subtitel
-        4.5 Amsterdam icon
-        4.6 Auteur image
-        4.7 Aside setup
-            4.7.1 Aside positionering
-            4.7.2 Lijntje boven aside
-            4.7.3 Datum in aside
-            4.7.4 Dag in aside
-            4.7.5 Social icons in aside
-        4.8 Artikel settings
-            4.8.1 Artikel sectie settings
-            4.8.2 Quote in artikel
-        4.9 Formulier settings
-            4.9.1 Form > titel settings
-            4.9.2 Form > Streepje na titel
-            4.9.3 Label settings
-            4.9.4 Afstand label en inputveld
-            4.9.5 Textarea breedte
-            4.9.6 Inputvelden
-            4.9.7 Cursor settings
-            4.9.8 Button
-        4.10 Gerelateerde artikelen > titel settings
-            4.10.1 Gerelateerde artikelen > Streepje na titel
-            4.10.2 Gerelateerde artikelen: ruimte tussen verschillende artikelen
-            4.10.3 Gerelateerde artikelen: ruimte tussen een artikel
-            4.10.4 Gerelateerde artikelen: breedte van een artikel
-            4.11 Footer
+        4.1 Header
+        4.2 Aside
+        4.3 Artikel
+        4.4 Formulier
+        4.5 Gerelateerde Artikelen
+        4.6 Footer
 ////////////////////////////////////////////////////////////////////////*/
-
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
 
-/* 1.1 Import Fonts */
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@800&family=Nanum+Myeongjo:wght@400&display=swap');
 
 
-/* 1.2 CSS Variabelen */
+/* CSS Variabelen */
 :root {
     --clr-primary: #058FDD;
     --clr-secondary: #343434;
     --clr-background: #F7F6F9;
 }
 
-/* 1.3 CSS Reset */
+/* CSS Reset */
 *,
 *::before,
 *::after {
@@ -70,14 +36,14 @@ Table of Contents:
     padding: 0;
 }
 
-/* 1.4 Image settings */
+/* Image settings */
 img,
 picture {
     max-width: 100%; /* image will shrink when viewport gets narrower */
     display: block; /* prevents spacing issues that might happen */
 }
 
-/* 1.5 Form settings */
+/* Form settings */
 input,
 button,
 textarea,
@@ -91,7 +57,7 @@ select {
     2. Typografie
 ////////////////////////*/
 
-/* 2.1 Typografie headings */
+/* Typografie headings */
 h1,
 h2,
 h3 {
@@ -114,14 +80,14 @@ h3 {
     margin-block: 5px;
 }
 
-/* 2.2 Typografie overig */
+/* Typografie overig */
 p,
 span,
 li,
 a,
 blockquote {
-    font-family: "Nanum Myeongjo", sans-serif;.
-    font-weight: 400;
+    font-family: "Nanum Myeongjo", sans-serif;
+. font-weight: 400;
     line-height: 1.5;
 }
 
@@ -191,7 +157,7 @@ footer {
     4. Areas
 ////////////////////////*/
 
-/* 4.1 Blogpost schuin text */
+/* Blogpost schuin text */
 body::before {
     position: absolute;
     display: inline-block;
@@ -203,7 +169,7 @@ body::before {
     transform: rotate(-90deg);
 }
 
-/* 4.2 Blogpost schuin lijntje */
+/* Blogpost schuin lijntje */
 body::after {
     position: absolute;
     display: inline-block;
@@ -215,7 +181,11 @@ body::after {
     transform: rotate(-90deg);
 }
 
-/* 4.3 Blogpost achtergrond */
+/*////////////////////////
+    4.1 Header
+////////////////////////*/
+
+/* Blogpost achtergrond */
 header::after {
     position: absolute;
     font-family: "Playfair Display", sans-serif;
@@ -226,7 +196,7 @@ header::after {
     top: -100px;
 }
 
-/* 4.4 Titel en subtitel */
+/* Titel en subtitel */
 header div {
     display: flex;
     flex-direction: column;
@@ -234,38 +204,42 @@ header div {
     margin-block: 40px;
 }
 
-/* 4.5 Amsterdam icon */
+/* Amsterdam icon */
 header div:nth-of-type(1) img {
     margin-top: 60px;
     height: 130px;
     width: 130px;
 }
 
-/* 4.6 Auteur image */
+/* Auteur image */
 header div:nth-of-type(2) img {
     height: 80px;
     width: 80px;
     margin-block: 15px;
 }
 
-/* 4.7 Aside setup */
+/*////////////////////////
+    4.2 Aside
+////////////////////////*/
+
+/* Aside setup */
 main {
     position: relative;
 }
 
-/* 4.7.1 Aside positionering */
+/* Aside positionering */
 aside {
     position: absolute;
     left: 80px;
     top: 30px;
 }
 
-/* 4.7.2 Lijntje boven aside */
+/* Lijntje boven aside */
 aside {
     border-top: 2px solid var(--clr-primary);
 }
 
-/* 4.7.3 Datum in aside */
+/* Datum in aside */
 aside time {
     display: flex;
     flex-direction: column;
@@ -276,19 +250,23 @@ aside time {
     margin-bottom: 40px;
 }
 
-/* 4.7.4 Dag in aside */
+/* Dag in aside */
 aside span {
     font-family: "Playfair Display", sans-serif;
     font-size: 3em;
 }
 
-/* 4.7.5 Social icons in aside */
+/* Social icons in aside */
 aside img {
     margin-block: 10px;
     width: 64px;
 }
 
-/* 4.8 Artikel settings */
+/*////////////////////////
+    4.3 Artikel
+////////////////////////*/
+
+/* Artikel settings */
 article {
     margin-inline: auto;
     max-width: 55em;
@@ -298,16 +276,7 @@ article p {
     margin-block: 20px;
 }
 
-article + article {
-    margin-left: 30px;
-}
-
-/* 4.8.1 Artikel sectie settings */
-article > section {
-    margin-bottom: 60px;
-}
-
-/* 4.8.2 Quote in artikel */
+/* Quote in artikel */
 article blockquote {
     position: relative;
     font-size: 1.1em;
@@ -317,22 +286,29 @@ article blockquote {
     border-left: solid 3px var(--clr-primary);
 }
 
-/* 4.9 Formulier settings */
+/*////////////////////////
+    4.4 Formulier
+////////////////////////*/
+
+/* Formulier settings */
 form {
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
+    min-width: 100%;
 }
 
-form > * {
-    margin-block: 20px;
+/* Margin na titel */
+form h2 ~ * {
+    margin: 10px 30px;
 }
 
-/* 4.9.1 Form > titel settings */
+/* Form > titel settings */
 form > h2 {
     position: relative;
 }
 
-/* 4.9.2 Form > Streepje na titel */
+/* Form > Streepje na titel */
 form > h2::after {
     position: absolute;
     content: "";
@@ -342,7 +318,7 @@ form > h2::after {
     width: 70%;
 }
 
-/* 4.9.3 Label settings */
+/* Label settings */
 label {
     font-family: "Inter", sans-serif;
     text-transform: uppercase;
@@ -350,7 +326,7 @@ label {
     font-size: 0.875em;
 }
 
-/* 4.9.4 Afstand label en inputveld */
+/* Afstand label en inputveld */
 input[type="text"],
 input[type="email"],
 select {
@@ -359,12 +335,7 @@ select {
     margin-block: 5px;
 }
 
-/* 4.9.5 Textarea breedte */
-textarea {
-    width: 800px;
-}
-
-/* 4.9.6 Inputvelden */
+/* Inputvelden */
 input[type="text"],
 input[type="email"],
 textarea,
@@ -379,7 +350,7 @@ select {
     border: none;
 }
 
-/* 4.9.7 Cursor settings */
+/* Cursor settings */
 input[type="checkbox"],
 input[type="radio"],
 select,
@@ -387,7 +358,7 @@ button {
     cursor: pointer;
 }
 
-/* 4.9.8 Button */
+/* Button */
 button {
     font-family: "Inter", sans-serif;
     color: black;
@@ -395,12 +366,20 @@ button {
     width: 200px;
 }
 
-/* 4.10 Gerelateerde artikelen > titel settings */
-section > h2 {
+/*//////////////////////////////////
+    4.5 Gerelateerde Artikelen
+//////////////////////////////////*/
+
+form + section {
+   width: 100%;
+}
+
+/* Gerelateerde artikelen > titel settings */
+form + section > h2 {
     position: relative;
 }
 
-/* 4.10.1 Gerelateerde artikelen > Streepje na titel */
+/* Gerelateerde artikelen > Streepje na titel */
 form + section > h2::after {
     position: absolute;
     content: "";
@@ -410,25 +389,39 @@ form + section > h2::after {
     width: 70%;
 }
 
-/* 4.10.2 Gerelateerde artikelen: ruimte tussen verschillende artikelen */
-section section div {
+/* Gerelateerde artikelen: ruimte tussen verschillende artikelen */
+form + section > div {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    /*gap: 3em;*/
 }
 
-/* 4.10.3 Gerelateerde artikelen: ruimte tussen een artikel */
-section section article div {
+/* Breedte van de artikelen */
+form + section article {
+    width: 369px;
+}
+
+/* Gerelateerde artikelen: ruimte tussen een artikel */
+section article div {
     margin-block: 20px;
 }
 
-/* 4.10.4 Gerelateerde artikelen: breedte van een artikel */
-section section div article {
-    max-width: 369px;
+section article img + div {
+    display: flex;
+    justify-content: space-between;
 }
 
-/* 4.11 Footer */
+/* Gerelateerde artikelen: breedte van een artikel */
+section section div article {
+    width: 396px;
+}
+
+/*//////////////////////////////////
+    4.6 Footer
+//////////////////////////////////*/
+
+/* Footer margin */
 footer {
     margin-block: 2em;
 }
