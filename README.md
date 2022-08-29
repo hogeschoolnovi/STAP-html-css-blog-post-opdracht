@@ -1,12 +1,12 @@
 # Opdrachtomschrijving
-Als kersverse junior developer wil jij een toffe blogpagina gaan maken. Misschien denk je wel direct aan Wordpress!
-Maar het is natuurlijk véél toffer om zelf een website te bouwen!
+Als kersverse junior developer wil jij een toffe blogpagina gaan maken. Daar bestaan inmiddels allemaal fraaie tools
+zoals bijvoorbeeld Wordpress of Wix voor, maar het is natuurlijk véél toffer om zelf een website te bouwen 🤩 (En bovendien een stuk goedkoper en efficienter!)
 
-Je gaat de pagina opbouwen met verschillende HTML elementen. Benieuwd welke er allemaal zijn?
+Je gaat de blogpagina opbouwen met verschillende `HTML elementen`. Benieuwd welke er allemaal zijn?
 Je vindt [hier een overzicht van alle elementen.](https://www.w3schools.com/TAgs/default.asp)
 Let op! Je gebruikt **geen CSS**.
 
-Geen zin om te typen? Onderaan in opdrachtomschrijving vind je alle dummytekst voor de opdracht.
+Geen zin om te typen? Onderaan in `README` vind je alle dummytekst voor de opdracht.
 
 ## Inhoudsopgave
 1. Eindresultaat
@@ -20,14 +20,15 @@ Geen zin om te typen? Onderaan in opdrachtomschrijving vind je alle dummytekst v
 
 ## Randvoorwaarden
 * Je gebruikt alleen HTML (geen CSS!);
+* De CSS zal niet werken, als je niet de juiste `HTML-tag` gebruikt.
 * Je mag de bestanden (`.css` & `.html`) niet verplaatsen;
 * Je gebruikt de afbeeldingen uit de `assets` map.
 
 ## Stappenplan
 Vind je het lastig om te beginnen? Volg dan het stappenplan.
 
-Bekijk de schermontwerpen, analyseer welk onderdeel
-een `div`, `header` of `article` moet zijn. Teken dit desnoods voor jezelf uit op papier met begeleidende tekst.
+_TIP_: Kom je er niet helemaal uit? Spiek dan soms in het CSS bestand. Maar doe dat niet te vaak 😉
+
 De opdracht kan opgesplitst worden in drie onderdelen: een `header`
 een `main` en een `footer`. We beginnen met het maken van de `header`.
 
@@ -36,6 +37,8 @@ een `main` en een `footer`. We beginnen met het maken van de `header`.
 - [ ] Voeg de blog `afbeelding` toe, let op: deze `afbeelding`-tag is een child-element van de `header`.
 - [ ] Maak een element voor de auteursinformatie: met daarin een geneste `avatar`, een stuk tekst en `link`-tag.
 - [ ] Benieuwd of je het goed hebt gedaan? Schakel dan de `link`-tag aan in de `head` van de `index.html`.
+
+Ziet het er niet zo uit als op de pagina? Loop dan nog even de mogelijke tags en instructies af.
 
 ### Deel 2: Main
 Bekijk de schermontwerpen, je kan de `main` onderverdelen in vier stukken: een social box, artikelen, een formulier
@@ -61,19 +64,19 @@ en gerelateerde artikelen.
 - [ ] Plaats nu `invoervelden` voor de naam en emailadres. Vergeet deze niet te omwikkelen met een`label`.
 - [ ] Bij iedere `invoerveld` en `label` combinatie kan je tekst toevoegen. Je hoeft dus geen extra tekst tag te plaatsen. Zie:
   `<label> Een titel <invoerveld/> </label>`
-- [ ] Plaatst een `drop down list` met `opties` (vergeet hierbij niet een `label`!)
-- [ ] Plaats een `tekstvlak` element, geef deze de twee attributen `cols="30"` en `rows="5"` mee.
+- [ ] Voeg een `drop down list` met `opties` (vergeet hierbij niet een `label`!)
+- [ ] Maak een `tekstvlak` element, geef deze de twee attributen `cols="30"` en `rows="5"` mee.
 - [ ] Maak twee `invoervelden` die een`type` hebben van `radio` en de tekst Public of Private.
 - [ ] Maak een `invoerveld` met een `type` van `checkbox` en de terms and conditions tekst.
 - [ ] Als laatste stap voor het formulier voeg je een `button` toe met een `type` attribuut van `submit`.
 - [ ] Ben je benieuwd of je het goed hebt gedaan? Schakel dan de `link`-tag aan.
 
 #### 2.4 Gerelateerde artikelen
-Bij 2.2 Artikelen, hebben we een opbouw gemaakt van een buitenste `article`-tag met drie verschillende `section`-tags.
-Voor de gerelateerde artikelen pakken we dit anders aan.
+Bij **2.2 Artikelen** hebben we een opbouw gemaakt van een buitenste `article`-tag met daarin drie `section`-tags.
+Voor de **gerelateerde artikelen** pakken we dit net wat anders aan.
 - [ ] Plaats een `section`-tag met daarin drie geneste `article`-tags.
 - [ ] Plaats in iedere `article`-tag een `afbeelding`.
-- [ ] Plaats onder de `afbeelding` (nog steeds in de `article`!) een lege `div` met een stukje tekst en `tijd`.
+- [ ] Voeg onder de `afbeelding` (nog steeds in de `article`!) een lege `div` met een stukje tekst en `tijd`.
 - [ ] Plaats hieronder een nieuwe lege `div` met een `H3 heading`, `paragraaf` en een `link`.
 - [ ] Ben je benieuwd of je het goed hebt gedaan? Schakel dan de `link`-tag aan.
 
