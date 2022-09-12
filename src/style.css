@@ -17,7 +17,7 @@ Table of Contents:
 ////////////////////////*/
 
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@800&family=Nanum+Myeongjo:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@800&family=Martel:wght@400&display=swap');
 
 
 /* CSS Variabelen */
@@ -33,7 +33,7 @@ Table of Contents:
 *::after {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 5px;
 }
 
 /* Image settings */
@@ -86,7 +86,7 @@ span,
 li,
 a,
 blockquote {
-    font-family: "Nanum Myeongjo", sans-serif;
+    font-family: "Martel", sans-serif;
 . font-weight: 400;
     line-height: 1.5;
 }
@@ -165,7 +165,7 @@ body::before {
     font-family: "Playfair Display", sans-serif;
     font-size: 1.5em;
     top: 200px;
-    left: 0;
+    left: -10px;
     transform: rotate(-90deg);
 }
 
@@ -236,7 +236,7 @@ aside {
 
 /* Lijntje boven aside */
 aside {
-    border-top: 2px solid var(--clr-primary);
+    border-top: 3px solid var(--clr-primary);
 }
 
 /* Datum in aside */
@@ -258,7 +258,6 @@ aside span {
 
 /* Social icons in aside */
 aside img {
-    margin-block: 10px;
     width: 64px;
 }
 
@@ -313,9 +312,10 @@ form > h2::after {
     position: absolute;
     content: "";
     top: 55%;
-    left: 30%;
-    border: 1px solid black;
+    left: 400px;
+    border-top: 1px solid black;
     width: 70%;
+    max-width: calc( 90vw - 400px);
 }
 
 /* Label settings */
@@ -371,7 +371,7 @@ button {
 //////////////////////////////////*/
 
 form + section {
-   width: 100%;
+    width: 100%;
 }
 
 /* Gerelateerde artikelen > titel settings */
@@ -384,9 +384,10 @@ form + section > h2::after {
     position: absolute;
     content: "";
     top: 55%;
-    left: 30%;
-    border: 1px solid black;
+    left: 400px;
+    border-top: 1px solid black;
     width: 70%;
+    max-width: calc( 90vw - 400px);
 }
 
 /* Gerelateerde artikelen: ruimte tussen verschillende artikelen */
@@ -428,4 +429,49 @@ footer {
 
 footer p {
     font-family: "Inter", sans-serif;
+}
+
+
+@media (max-width: 1200px) {
+    /* Blogpost schuin text */
+    body::before {
+        top: 100px;
+    }
+
+    /* Blogpost schuin lijntje */
+    body::after {
+        width: 50px;
+        top: 200px;
+        left: 25px;
+    }
+
+    /*////////////////////////
+    4.2 Aside
+    ////////////////////////*/
+    main {
+        display: flex;
+        position: relative;
+    }
+
+    /* Aside positionering */
+    aside {
+        display: flex;
+        align-items: center;
+        position: relative;
+        align-self: flex-start;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        left: 10px;
+        top: 30px;
+        height: 100px;
+        border-left: 3px solid var(--clr-primary);
+        border-top: none;
+    }
+
+    /* Social icons in aside */
+    aside div {
+        position: relative;
+        display: flex;
+    }
+
 }

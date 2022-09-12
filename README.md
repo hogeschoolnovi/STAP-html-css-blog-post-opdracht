@@ -46,8 +46,9 @@ en gerelateerde artikelen.
 
 #### 2.1 Social box
 - [ ] De social box staat los aan de **zijkant** van de pagina. Kijk [weer eens naar het overzicht.](https://www.w3schools.com/TAgs/default.asp) Welke tag kan je gebruiken?
-- [ ] Voeg het `gekozen element` toe met daar in een geneste `tijd` (Let op! Gebruik **niet** `<data>`!)
-- [ ] Voeg in hetzelfde `gekozen element` een nieuw child element toe, met klikbare `icons` die naar externe pagina's linken.
+- [ ] Voeg het `gekozen element` toe met daar in een geneste `tijd` (Let op! Gebruik **niet** `<data>`!) en plaats daarin een `span` element voor het getal
+- 
+- [ ] Voeg in hetzelfde `gekozen element` waar de `tijd` in is genest voor elke afbeelding een nieuw child element toe, met klikbare `icons` die naar externe pagina's linken.
 - [ ] Ben je benieuwd of je het goed hebt gedaan? Schakel dan de `link`-tag aan.
 
 #### 2.2 Artikelen
@@ -74,7 +75,8 @@ en gerelateerde artikelen.
 #### 2.4 Gerelateerde artikelen
 Bij **2.2 Artikelen** hebben we een opbouw gemaakt van een buitenste `article`-tag met daarin drie `section`-tags.
 Voor de **gerelateerde artikelen** pakken we dit net wat anders aan.
-- [ ] Plaats een `section`-tag met daarin drie geneste `article`-tags.
+- [ ] Plaats een `section`-tag en plaats daar je titel in.
+- [ ] Plaats in deze `section` een `div`-tag met daarin drie geneste `article`-tags.
 - [ ] Plaats in iedere `article`-tag een `afbeelding`.
 - [ ] Voeg onder de `afbeelding` (nog steeds in de `article`!) een lege `div` met een stukje tekst en `tijd`.
 - [ ] Plaats hieronder een nieuwe lege `div` met een `H3 heading`, `paragraaf` en een `link`.
