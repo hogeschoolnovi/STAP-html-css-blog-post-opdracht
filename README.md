@@ -16,7 +16,9 @@ Geen zin om te typen? Onderaan in `README` vind je alle dummytekst voor de opdra
 
 ## Eindresultaat
 
-![Het eindresultaat](./src/assets/images/eindresultaat.png)
+![Het eindresultaat op desktop](assets/examples/voorbeeld-pagina-desktop-met-css.png)
+
+![Het eindresultaat op mobiel](assets/examples/voorbeeld-pagina-mobiel-met-css.png)
 
 ## Randvoorwaarden
 * Je gebruikt alleen HTML (geen CSS!);
@@ -89,12 +91,11 @@ Voor de **gerelateerde artikelen** pakken we dit net wat anders aan.
 
 ## Dummytekst
 > ## De onmisbare gids voor Amsterdam
-> Stadsleven | 5 min 
+> Stedentrip | 5 min 
 
-> Jane Doe | Markering Manager@Jane_Doe
-> 
+> Jane Doe | Markering Manager @Jane_Doe
+-------------------------------------------------------------------------
 > 21 jul 22
-
 > ## Amsterdam is echt een van de mooiste steden ter wereld. We hebben een complete gids voor Amsterdam voor je gemaakt als first-timer.
 > Amsterdam is de hoofdstad van Nederland - een enorme stad met meer dan een miljoen inwoners, vol met ongelooflijke architectuur, musea, eten en cultuur. Het wordt vaak het Venetië van het Noorden genoemd, vanwege de vele kanalen die de stad doorkruisen en de 1.281 bruggen die langs die kanalen te vinden zijn.
 >
@@ -104,7 +105,7 @@ Voor de **gerelateerde artikelen** pakken we dit net wat anders aan.
 > 
 >Of je nu de voorkeur geeft aan cultuur en geschiedenis, rondneuzen in musea, serieus feesten of gewoon genieten van de ontspannen charme van een oude Europese stad, er zijn veel verschillende buurten (of wijken) om te verkennen in Amsterdam.
 
-> ### Wanneer naar Amsterdam?
+> ### Beste periode om naar Amsterdam te gaan
 > Elk moment van het jaar is goed om naar Amsterdam te reizen, hoewel het raadzaam is om regenkleding mee te nemen omdat het elk moment kan regenen. Juli tot augustus wordt beschouwd als het hoogseizoen voor reizen. Zo vind je de beste tarieven voor hotels en vluchten buiten die tijden. Om gekke drukte te vermijden en toch te genieten van mooi weer, raden we aan om Amsterdam te bezoeken in:
 > - April
 > - Mei
@@ -120,15 +121,15 @@ Voor de **gerelateerde artikelen** pakken we dit net wat anders aan.
 >
 >Ontdek de beste plaatsen om te bezoeken in deze dynamische stad met onze lijst met topattracties en leuke dingen om te doen in Amsterdam:
 > - Bekijk de kunstcollecties in het Rijksmuseum
-> - Bezoek Anne Frank Huis
+> - Bezoek het Anne Frank Huis
 > - Beleef geweldige kunst in het Van Gogh Museum
 > - Verken de Jordaan
-> - Familieplezier en bloemen in het Vondelpark
-> - Kijk mensen op de Dam
+> - Ontspan in het schitterende Vondelpark
+> - Mensen kijken op de Dam
 > - Ga shoppen in de Kalverstraat en Bloemenmarkt
 > - Word slim in het NEMO Science Museum
 > - Ontdek de Wallen
- 
+-------------------------------------------------------------------------
 > ### Laat een reactie achter
 > Ben je in Amsterdam geweest en wil je bijdragen aan deze blog? Laat een reactie achter en laat ons weten wat we moeten toevoegen aan onze lijst.
 > - Naam
@@ -139,7 +140,7 @@ Voor de **gerelateerde artikelen** pakken we dit net wat anders aan.
 > - Prive
 > - Ik ga akkoord met de voorwaarden
 > - Reageer
-
+-------------------------------------------------------------------------
 > ### Gerelateerde artikelen
 > #### Studeren en leven in Amsterdam
 > - Reizen
@@ -147,16 +148,17 @@ Voor de **gerelateerde artikelen** pakken we dit net wat anders aan.
 > Dat er zoveel studenten in de hoofdstad zijn, is niet gek. Op het gebied van onderwijs is er in Amsterdam namelijk heel veel mogelijk!
 > 
 >Lees artikel
-> 
+
 > #### Topactiviteiten in Nederland
 > - Lifestyle
 > 
 > Leer Nederland echt kennen met de beste activiteiten die het te bieden heeft. Wij hebben de beste activiteiten voor jou op een rij gezet.
 > 
 > Lees artikel
+
 > #### Beste historische locaties in Amsterdam
-> - Stadsleven
-> 
+> - Stedentrip
+>
 > Amsterdam is een stad met een rijke geschiedenis, die weerspiegeld wordt in de vele duizenden
 monumenten. De monumenten van Amsterdam vertellen de meest prachtige verhalen.
 > 

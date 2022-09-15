@@ -1,0 +1,483 @@
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typografie
+    3. Layout
+    4. Areas
+        4.1 Header
+        4.2 Aside
+        4.3 Artikel
+        4.4 Formulier
+        4.5 Gerelateerde Artikelen
+        4.6 Footer
+////////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////
+    1. Global Styles
+////////////////////////*/
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@800&family=Martel:wght@400&display=swap');
+
+
+/* CSS Variabelen */
+:root {
+    --clr-primary: #058FDD;
+    --clr-secondary: #343434;
+    --clr-background: #F7F6F9;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+}
+
+/* Image settings */
+img,
+picture {
+    max-width: 100%; /* image will shrink when viewport gets narrower */
+    display: block; /* prevents spacing issues that might happen */
+}
+
+/* Form settings */
+input,
+button,
+textarea,
+blockquote,
+select {
+    font: inherit;
+}
+
+
+/*////////////////////////
+    2. Typografie
+////////////////////////*/
+
+/* Typografie headings */
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    font-size: 2.25em;
+    margin: 20px 0 40px 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-block: 5px;
+}
+
+/* Typografie overig */
+p,
+span,
+li,
+a,
+blockquote {
+    font-family: "Martel", sans-serif;
+. font-weight: 400;
+    line-height: 1.5;
+}
+
+ul,
+ol {
+    margin-block: 20px;
+}
+
+li {
+    margin-left: 40px;
+    line-height: 2;
+}
+
+p {
+    font-weight: 400;
+    line-height: 2;
+    font-size: 1em;
+}
+
+span {
+    font-size: 0.875em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Inter", sans-serif;
+}
+
+time {
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+}
+
+a,
+a:visited,
+a:link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--clr-primary);
+    letter-spacing: 1px;
+    font-size: 0.875em;
+    font-family: "Inter", sans-serif;
+}
+
+/*////////////////////////
+    3. Layout
+////////////////////////*/
+
+/* Body */
+body {
+    font-family: 'Nanum Myeongjo', serif;
+    color: var(--clr-secondary);
+    background-color: var(--clr-background);
+    overflow-x: hidden;
+}
+
+/* Flexbox properties */
+header,
+main,
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    max-width: 80em;
+}
+
+/*////////////////////////
+    4. Areas
+////////////////////////*/
+
+/* Blogpost schuin text */
+body::before {
+    position: absolute;
+    display: inline-block;
+    content: 'Blogpost';
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.5em;
+    top: 200px;
+    left: -10px;
+    transform: rotate(-90deg);
+}
+
+/* Blogpost schuin lijntje */
+body::after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    border-top: solid 2px black;
+    width: 50px;
+    top: 300px;
+    left: 25px;
+    transform: rotate(-90deg);
+}
+
+/*////////////////////////
+    4.1 Header
+////////////////////////*/
+
+/* Blogpost achtergrond */
+header::after {
+    position: absolute;
+    font-family: "Playfair Display", sans-serif;
+    color: rgba(45, 42, 46, 0.03);
+    font-size: 31.25em;
+    content: 'Blogpost';
+    z-index: -1;
+    top: -100px;
+}
+
+/* Titel en subtitel */
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 40px;
+}
+
+/* Amsterdam icon */
+header div:nth-of-type(1) img {
+    margin-top: 60px;
+    height: 130px;
+    width: 130px;
+}
+
+/* Auteur image */
+header div:nth-of-type(2) img {
+    height: 80px;
+    width: 80px;
+    margin-block: 15px;
+}
+
+/*////////////////////////
+    4.2 Aside
+////////////////////////*/
+
+/* Aside setup */
+main {
+    position: relative;
+}
+
+/* Aside positionering */
+aside {
+    position: absolute;
+    left: 80px;
+    top: 30px;
+}
+
+/* Lijntje boven aside */
+aside {
+    border-top: 3px solid var(--clr-primary);
+}
+
+/* Datum in aside */
+aside time {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 0.75em;
+    margin-bottom: 40px;
+}
+
+/* Dag in aside */
+aside span {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 3em;
+}
+
+/* Social icons in aside */
+aside img {
+    width: 64px;
+}
+
+/*////////////////////////
+    4.3 Artikel
+////////////////////////*/
+
+/* Artikel settings */
+article {
+    margin-inline: auto;
+    max-width: 55em;
+}
+
+article p {
+    margin-block: 20px;
+}
+
+/* Quote in artikel */
+article blockquote {
+    position: relative;
+    font-size: 1.1em;
+    padding: 0 0 0 20px;
+    margin-block: 30px;
+    font-style: italic;
+    border-left: solid 3px var(--clr-primary);
+}
+
+/*////////////////////////
+    4.4 Formulier
+////////////////////////*/
+
+/* Formulier settings */
+form {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    min-width: 100%;
+}
+
+/* Margin na titel */
+form h2 ~ * {
+    margin: 10px 30px;
+}
+
+/* Form > titel settings */
+form > h2 {
+    position: relative;
+}
+
+/* Form > Streepje na titel */
+form > h2::after {
+    position: absolute;
+    content: "";
+    top: 55%;
+    left: 400px;
+    border-top: 1px solid black;
+    width: 70%;
+    max-width: calc( 90vw - 400px);
+}
+
+/* Label settings */
+label {
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    margin-block: 7px;
+    font-size: 0.875em;
+}
+
+/* Afstand label en inputveld */
+input[type="text"],
+input[type="email"],
+select {
+    width: 200px;
+    margin-left: 15px;
+    margin-block: 5px;
+}
+
+/* Inputvelden */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    color: var(--clr-secondary);
+    background: #EFEFEF;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    border: none;
+}
+
+/* Cursor settings */
+input[type="checkbox"],
+input[type="radio"],
+select,
+button {
+    cursor: pointer;
+}
+
+/* Button */
+button {
+    font-family: "Inter", sans-serif;
+    color: black;
+    padding: 5px 20px;
+    width: 200px;
+}
+
+/*//////////////////////////////////
+    4.5 Gerelateerde Artikelen
+//////////////////////////////////*/
+
+form + section {
+    width: 100%;
+}
+
+/* Gerelateerde artikelen > titel settings */
+form + section > h2 {
+    position: relative;
+}
+
+/* Gerelateerde artikelen > Streepje na titel */
+form + section > h2::after {
+    position: absolute;
+    content: "";
+    top: 55%;
+    left: 400px;
+    border-top: 1px solid black;
+    width: 70%;
+    max-width: calc( 90vw - 400px);
+}
+
+/* Gerelateerde artikelen: ruimte tussen verschillende artikelen */
+form + section > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Breedte van de artikelen */
+form + section article {
+    width: 369px;
+}
+
+/* Gerelateerde artikelen: ruimte tussen een artikel */
+section article div {
+    margin-block: 20px;
+}
+
+section article img + div {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Gerelateerde artikelen: breedte van een artikel */
+section section div article {
+    width: 396px;
+}
+
+div > span + time {
+    font-size: 0.875em;
+    letter-spacing: 1px;
+    font-family: "Inter", sans-serif;
+}
+
+/*//////////////////////////////////
+    4.6 Footer
+//////////////////////////////////*/
+
+/* Footer margin */
+footer {
+    margin-block: 2em;
+}
+
+footer p {
+    font-family: "Inter", sans-serif;
+}
+
+
+@media (max-width: 1200px) {
+    /* Blogpost schuin text */
+    body::before {
+        top: 100px;
+    }
+
+    /* Blogpost schuin lijntje */
+    body::after {
+        width: 50px;
+        top: 200px;
+        left: 25px;
+    }
+
+    /*////////////////////////
+    4.2 Aside
+    ////////////////////////*/
+    main {
+        display: flex;
+        position: relative;
+    }
+
+    /* Aside positionering */
+    aside {
+        display: flex;
+        align-items: center;
+        position: relative;
+        align-self: flex-start;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        left: 10px;
+        top: 30px;
+        height: 100px;
+        border-left: 3px solid var(--clr-primary);
+        border-top: none;
+    }
+
+    /* Social icons in aside */
+    aside div {
+        position: relative;
+        display: flex;
+    }
+
+}
