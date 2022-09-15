@@ -18,8 +18,6 @@ Geen zin om te typen? Onderaan in `README` vind je alle dummytekst voor de opdra
 
 ![Het eindresultaat op desktop](assets/examples/voorbeeld-pagina-desktop-met-css.png)
 
-![Het eindresultaat op mobiel](assets/examples/voorbeeld-pagina-mobiel-met-css.png)
-
 ## Randvoorwaarden
 * Je gebruikt alleen HTML (geen CSS!);
 * De CSS zal niet werken, als je niet de juiste `HTML-tag` gebruikt.
